@@ -1,0 +1,19 @@
+.hero
+	//background: #f1f1f1 url(../../img/caret.png) no-repeat center top 80px
+	background: rgb(27,249,227)
+	background: radial-gradient(circle, rgba(27,249,227,1) 0%, rgba(241,241,241,1) 100%)
+	background-size: contain
+	padding-top: 180px
+	padding-bottom: 270px
+	&__title
+		font-size: 30px
+		margin-bottom: 40px
+	&__subtitle
+		display: block
+		font-size: 30px
+		+bold
+		margin-bottom: 67px
+
+@media (max-width: 991px)
+	.hero
+		background-size: cover
