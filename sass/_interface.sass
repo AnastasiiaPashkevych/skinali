@@ -1,0 +1,127 @@
+body
+	+light
+	color: $text-color
+img
+	max-width: 100%
+.section
+	padding: 100px 0
+	&-title
+		font-size: 30px
+		+bold
+		text-align: center
+		text-transform: uppercase
+	&__title
+		margin-bottom: 100px
+
+.button-o
+	border: 2px solid $primary
+	padding: 17px 22px
+	font-size: 12px
+	text-transform: uppercase
+	color: $primary
+	+bold
+	background-color: #fff
+	text-decoration: none
+	&:hover
+		cursor: pointer
+
+.button
+	border: none
+	text-transform: uppercase
+	padding: 25px 45px
+	background-color: $primary
+	color: #fff
+	+bold
+	text-decoration: none
+	&:hover
+		cursor: pointer
+	&-fitting
+		color: $primary
+		background-color: #fff
+	&-add
+		background-color: lighten($primary, 10%)
+		color: #fff
+	&-like
+		background-color: $primary
+		height: 30px
+		width: 30px
+		border: none
+
+.bg-secondary
+	background-color: $bg-secondary
+
+.input
+	height: 80px
+	padding: 30px
+	padding-left: 30px
+	border: 1px solid #ddd
+
+input[type="checkbox"]
+	display: none
+	&:checked + label:before
+		background-color: $primary
+.select
+	height: 80px
+	width: 100%
+	background-color: #fff
+	border: 1px solid #ddd
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		z-index: 9
+		top: 50%
+		transform: translateY(-50%)
+		right: 20px
+		width: 20px
+		height: 20px
+		background: url('../img/caret.png') no-repeat center
+		background-size: 100%
+	&:hover
+		cursor: pointer
+	&_checked
+		line-height: 80px
+		padding-left: 30px
+	&__dropdown
+		position: absolute
+		top: 80px
+		width: 100%
+		background-color: #fff
+		border: 1px solid #ddd
+		margin: 0
+		list-style: none
+		padding: 0
+		display: none
+		&_open
+			display: block
+
+	&__option
+		padding: 20px
+		&:hover
+			background-color: $bg-secondary
+
+
+.checkbox
+	&-label
+		display: flex
+		align-items: center
+		margin-right: 40px
+		&:hover
+			cursor: pointer
+		&:before
+			content: ''
+			display: inline-block
+			width: 30px
+			height: 30px
+			border: 1px solid #ddd
+			margin-right: 20px
+
+@media (max-width: 576px)
+	.button
+		font-size: 10px
+	.button-o
+		font-size: 10px
+	.section
+		padding: 60px 0
+		&-title	
+			font-size: 24px
